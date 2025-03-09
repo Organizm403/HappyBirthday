@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>День рождения</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="confetti-container"></div>
+    <div class="card" id="card">
+        <div class="front">
+            <div class="hover-text">🎮 Кликни, чтобы открыть ✨</div>
+        </div>
+        <div class="inside">
+            <audio id="music" src="birthday.mp3" loop></audio>
+            <div class="content">
+                <div class="slider">
+                    <img src="pic_1.jpg" class="slide active" data-index="1">
+                    <img src="pic_2.jpg" class="slide" data-index="2">
+                    <img src="pic_3.jpg" class="slide" data-index="3">
+                    <img src="pic_4.jpg" class="slide" data-index="4">
+                    <img src="pic_5.jpg" class="slide" data-index="5">
+                    <img src="pic_6.jpg" class="slide" data-index="6">
+                </div>
+                <div class="text">
+                    <h1 class="title">С днём рождения,<br>доктор Фримен! 🩺✨</h1>
+                    <div class="congrats">
+                        <p class="highlight">Почётный медальон за выживание:</p>
+                        <ul class="achievements">
+                            <li>Всегда поддерживал мои авантюрные идеи в PUBG 🧪</li>
+                            <li>Выдержал все самые тильтовые катки в Valorant 🎯</li>
+                            <li>Создал лучший канал в Discord  📱</li>
+                        </ul>
+                    </div>
+    
+                    <div class="wishes">
+                        <p class="highlight">Твой год должен быть:</p>
+                        <div class="columns">
+                            <div class="column">
+                                <span class="emoji">📚</span>  
+                                <p>Экзамены — как пушка в PubG: короткие и точные</p>
+                            </div>
+                            <div class="column">
+                                <span class="emoji">🎮</span>  
+                                <p>Победы в играх — как у тебя в чате: God-Like</p>
+                            </div>
+                            <div class="column">
+                                <span class="emoji">🎉</span>  
+                                <p>Юмор — как твои медицинские мемы: эпичный</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <p class="final-wish">Пусть твой стетоскоп чаще ловит сердцебиение побед,<br>а наш Discord всегда был активным 🎉</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="volume-control">
+        <label for="volume">Громкость:</label>
+        <input type="range" id="volume" min="0" max="1" step="0.01" value="0.5">
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
